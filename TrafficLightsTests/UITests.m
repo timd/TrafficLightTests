@@ -89,7 +89,17 @@ describe(@"The user interface", ^{
            [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
        });
         
+        it(@"should send a 'tick' message to the delegate when the Tick button is tapped", ^{
+            id delegateMock = [KWMock mockForProtocol:@protocol(LightEngineProtocol)];
+            [[delegateMock should] conformToProtocol:@protocol(LightEngineProtocol)];
+            [vc setDelegate:delegateMock];
+            [[delegateMock should] receive:@selector(tick) andReturn:@164];
+            [vc didTapTickButton:nil];
+        });
+
+        
     });
+    
    
 });
 

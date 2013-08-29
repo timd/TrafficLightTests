@@ -66,6 +66,7 @@
 }
 
 - (IBAction)didTapTickButton:(id)sender {
+    [self.delegate tick];
 }
 
 - (IBAction)didTapStopButton:(id)sender {
