@@ -10,9 +10,25 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *upRed;
+@property (weak, nonatomic) IBOutlet UIView *upAmber;
+@property (weak, nonatomic) IBOutlet UIView *upGreen;
+@property (weak, nonatomic) IBOutlet UIView *downRed;
+@property (weak, nonatomic) IBOutlet UIView *downAmber;
+@property (weak, nonatomic) IBOutlet UIView *downGreen;
+
+@property (weak, nonatomic) IBOutlet UIImageView *stopImageview;
+
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIButton *tickButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
+
 @end
 
 @implementation ViewController
+
+#pragma mark -
+#pragma mark View lifecycle
 
 - (void)viewDidLoad
 {
@@ -24,6 +40,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+#pragma Button methods
+
+- (IBAction)didTapStartButton:(id)sender {
+}
+
+- (IBAction)didTapTickButton:(id)sender {
+}
+
+- (IBAction)didTapStopButton:(id)sender {
 }
 
 @end
