@@ -25,6 +25,12 @@
 		2228B6F117CF4E3600D39BA8 /* TrafficLightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228B6F017CF4E3600D39BA8 /* TrafficLightsTests.m */; };
 		2228B70117CF50C300D39BA8 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228B70017CF50C300D39BA8 /* ModelTests.m */; };
 		2228B70417CF5DA900D39BA8 /* LightEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228B70317CF5DA900D39BA8 /* LightEngine.m */; };
+		22470D9E17CFA0DB0073CC2F /* lights.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9817CFA0DB0073CC2F /* lights.png */; };
+		22470D9F17CFA0DB0073CC2F /* lights@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9917CFA0DB0073CC2F /* lights@2x.png */; };
+		22470DA017CFA0DB0073CC2F /* noEntry.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9A17CFA0DB0073CC2F /* noEntry.png */; };
+		22470DA117CFA0DB0073CC2F /* noEntry@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9B17CFA0DB0073CC2F /* noEntry@2x.jpg */; };
+		22470DA217CFA0DB0073CC2F /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9C17CFA0DB0073CC2F /* stop.png */; };
+		22470DA317CFA0DB0073CC2F /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9D17CFA0DB0073CC2F /* stop@2x.png */; };
 		5C0AD4E6990044FBAE866948 /* libPods-TrafficLightsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA8BF3893E4C5D8AF4618D /* libPods-TrafficLightsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +69,12 @@
 		2228B70017CF50C300D39BA8 /* ModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
 		2228B70217CF5DA900D39BA8 /* LightEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightEngine.h; sourceTree = "<group>"; };
 		2228B70317CF5DA900D39BA8 /* LightEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightEngine.m; sourceTree = "<group>"; };
+		22470D9817CFA0DB0073CC2F /* lights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lights.png; sourceTree = "<group>"; };
+		22470D9917CFA0DB0073CC2F /* lights@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lights@2x.png"; sourceTree = "<group>"; };
+		22470D9A17CFA0DB0073CC2F /* noEntry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noEntry.png; sourceTree = "<group>"; };
+		22470D9B17CFA0DB0073CC2F /* noEntry@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "noEntry@2x.jpg"; sourceTree = "<group>"; };
+		22470D9C17CFA0DB0073CC2F /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		22470D9D17CFA0DB0073CC2F /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
 		A072BC1011E64A7DB0F30D3A /* Pods-TrafficLightsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficLightsTests.xcconfig"; path = "Pods/Pods-TrafficLightsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B1EA8BF3893E4C5D8AF4618D /* libPods-TrafficLightsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrafficLightsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,6 +139,7 @@
 		2228B6C517CF4E3600D39BA8 /* TrafficLights */ = {
 			isa = PBXGroup;
 			children = (
+				22470D9717CFA0DB0073CC2F /* assets */,
 				2228B6FB17CF4E4700D39BA8 /* App delegate */,
 				2228B6FC17CF4E4C00D39BA8 /* Model */,
 				2228B6FA17CF4E3C00D39BA8 /* User interface */,
@@ -212,6 +225,19 @@
 			name = "Model tests";
 			sourceTree = "<group>";
 		};
+		22470D9717CFA0DB0073CC2F /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				22470D9817CFA0DB0073CC2F /* lights.png */,
+				22470D9917CFA0DB0073CC2F /* lights@2x.png */,
+				22470D9A17CFA0DB0073CC2F /* noEntry.png */,
+				22470D9B17CFA0DB0073CC2F /* noEntry@2x.jpg */,
+				22470D9C17CFA0DB0073CC2F /* stop.png */,
+				22470D9D17CFA0DB0073CC2F /* stop@2x.png */,
+			);
+			path = assets;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,6 +316,12 @@
 				2228B6D417CF4E3600D39BA8 /* Default@2x.png in Resources */,
 				2228B6D617CF4E3600D39BA8 /* Default-568h@2x.png in Resources */,
 				2228B6DC17CF4E3600D39BA8 /* ViewController.xib in Resources */,
+				22470D9E17CFA0DB0073CC2F /* lights.png in Resources */,
+				22470D9F17CFA0DB0073CC2F /* lights@2x.png in Resources */,
+				22470DA017CFA0DB0073CC2F /* noEntry.png in Resources */,
+				22470DA117CFA0DB0073CC2F /* noEntry@2x.jpg in Resources */,
+				22470DA217CFA0DB0073CC2F /* stop.png in Resources */,
+				22470DA317CFA0DB0073CC2F /* stop@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
