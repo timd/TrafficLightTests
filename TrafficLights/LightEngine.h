@@ -1,15 +1,6 @@
-//
-//  LightEngine.h
-//  TrafficLights
-//
-//  Created by Tim on 29/08/2013.
-//  Copyright (c) 2013 Charismatic Megafauna Ltd. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
+#import "ViewController.h"
 
-@interface LightEngine : NSObject
-
+@interface LightEngine : NSObject <LightEngineProtocol>
 -(NSNumber *)tick;
-
 @end

@@ -1,6 +1,7 @@
 #import "Kiwi.h"
 #import "ViewController.h"
 #import "AppDelegate.h"
+#import "LightEngine.h"
 
 @interface ViewController (UITests)
 @property (nonatomic, weak) id delegate;
@@ -22,6 +23,26 @@
 @end
 
 SPEC_BEGIN(UITests)
+
+describe(@"The view controller", ^{
+    
+    __block ViewController *vc = nil;
+    
+    beforeEach(^{
+        vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    });
+    
+    it(@"should have a delegate property", ^{
+        [[vc should] respondToSelector:@selector(delegate)];
+    });
+    
+    it(@"should have a delegate set when it is instantiated", ^{
+        AppDelegate *appDelegate = [[AppDelegate alloc] init];
+        [appDelegate application:nil didFinishLaunchingWithOptions:nil];
+        [[(NSObject *)appDelegate.viewController.delegate should] conformToProtocol:@protocol(LightEngineProtocol)];
+    });
+    
+});
 
 describe(@"The user interface", ^{
 
@@ -69,7 +90,7 @@ describe(@"The user interface", ^{
        });
         
     });
-    
+   
 });
 
 SPEC_END
