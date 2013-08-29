@@ -1,14 +1,11 @@
-//
-//  AppDelegate.m
-//  TrafficLights
-//
-//  Created by Tim on 29/08/2013.
-//  Copyright (c) 2013 Charismatic Megafauna Ltd. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "LightEngine.h"
+
+@interface AppDelegate()
+@property (nonatomic, strong) LightEngine *lightEngine;
+@end
 
 @implementation AppDelegate
 
@@ -17,6 +14,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    
+    self.lightEngine = [[LightEngine alloc] init];
+    [self.viewController setDelegate:self.lightEngine];
+    
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
