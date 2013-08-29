@@ -17,7 +17,6 @@
 		2228B6D417CF4E3600D39BA8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2228B6D317CF4E3600D39BA8 /* Default@2x.png */; };
 		2228B6D617CF4E3600D39BA8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2228B6D517CF4E3600D39BA8 /* Default-568h@2x.png */; };
 		2228B6D917CF4E3600D39BA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228B6D817CF4E3600D39BA8 /* ViewController.m */; };
-		2228B6DC17CF4E3600D39BA8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2228B6DA17CF4E3600D39BA8 /* ViewController.xib */; };
 		2228B6E417CF4E3600D39BA8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2228B6E317CF4E3600D39BA8 /* SenTestingKit.framework */; };
 		2228B6E517CF4E3600D39BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2228B6BF17CF4E3600D39BA8 /* UIKit.framework */; };
 		2228B6E617CF4E3600D39BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2228B6C117CF4E3600D39BA8 /* Foundation.framework */; };
@@ -31,6 +30,7 @@
 		22470DA117CFA0DB0073CC2F /* noEntry@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9B17CFA0DB0073CC2F /* noEntry@2x.jpg */; };
 		22470DA217CFA0DB0073CC2F /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9C17CFA0DB0073CC2F /* stop.png */; };
 		22470DA317CFA0DB0073CC2F /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9D17CFA0DB0073CC2F /* stop@2x.png */; };
+		22470DA517CFA2600073CC2F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22470DA417CFA2600073CC2F /* ViewController.xib */; };
 		5C0AD4E6990044FBAE866948 /* libPods-TrafficLightsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA8BF3893E4C5D8AF4618D /* libPods-TrafficLightsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +60,6 @@
 		2228B6D517CF4E3600D39BA8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2228B6D717CF4E3600D39BA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2228B6D817CF4E3600D39BA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2228B6DB17CF4E3600D39BA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		2228B6E217CF4E3600D39BA8 /* TrafficLightsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficLightsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2228B6E317CF4E3600D39BA8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2228B6EB17CF4E3600D39BA8 /* TrafficLightsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrafficLightsTests-Info.plist"; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		22470D9B17CFA0DB0073CC2F /* noEntry@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "noEntry@2x.jpg"; sourceTree = "<group>"; };
 		22470D9C17CFA0DB0073CC2F /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		22470D9D17CFA0DB0073CC2F /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
+		22470DA417CFA2600073CC2F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		A072BC1011E64A7DB0F30D3A /* Pods-TrafficLightsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficLightsTests.xcconfig"; path = "Pods/Pods-TrafficLightsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B1EA8BF3893E4C5D8AF4618D /* libPods-TrafficLightsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrafficLightsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -186,7 +186,7 @@
 			children = (
 				2228B6D717CF4E3600D39BA8 /* ViewController.h */,
 				2228B6D817CF4E3600D39BA8 /* ViewController.m */,
-				2228B6DA17CF4E3600D39BA8 /* ViewController.xib */,
+				22470DA417CFA2600073CC2F /* ViewController.xib */,
 			);
 			name = "User interface";
 			sourceTree = "<group>";
@@ -315,13 +315,13 @@
 				2228B6D217CF4E3600D39BA8 /* Default.png in Resources */,
 				2228B6D417CF4E3600D39BA8 /* Default@2x.png in Resources */,
 				2228B6D617CF4E3600D39BA8 /* Default-568h@2x.png in Resources */,
-				2228B6DC17CF4E3600D39BA8 /* ViewController.xib in Resources */,
 				22470D9E17CFA0DB0073CC2F /* lights.png in Resources */,
 				22470D9F17CFA0DB0073CC2F /* lights@2x.png in Resources */,
 				22470DA017CFA0DB0073CC2F /* noEntry.png in Resources */,
 				22470DA117CFA0DB0073CC2F /* noEntry@2x.jpg in Resources */,
 				22470DA217CFA0DB0073CC2F /* stop.png in Resources */,
 				22470DA317CFA0DB0073CC2F /* stop@2x.png in Resources */,
+				22470DA517CFA2600073CC2F /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,14 +419,6 @@
 				2228B6C917CF4E3600D39BA8 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2228B6DA17CF4E3600D39BA8 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2228B6DB17CF4E3600D39BA8 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 		2228B6EC17CF4E3600D39BA8 /* InfoPlist.strings */ = {
