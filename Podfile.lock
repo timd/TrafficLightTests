@@ -1,0 +1,18 @@
+PODS:
+  - Kiwi (2.2):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+  - Kiwi/ARC (2.2)
+  - Kiwi/NonARC (2.2)
+
+DEPENDENCIES:
+  - Kiwi (from `/Users/Tim/codeLibraries/Kiwi`)
+
+EXTERNAL SOURCES:
+  Kiwi:
+    :path: /Users/Tim/codeLibraries/Kiwi
+
+SPEC CHECKSUMS:
+  Kiwi: 6adc11ecabe0642232ba9d84b3bab509111b6d09
+
+COCOAPODS: 0.23.0
