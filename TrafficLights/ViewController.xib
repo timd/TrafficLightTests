@@ -44,7 +44,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="784510233"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<object class="NSColor" key="IBUIBackgroundColor" id="74914011">
+						<object class="NSColor" key="IBUIBackgroundColor" id="381743120">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
 						</object>
@@ -58,7 +58,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="370567457"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="74914011"/>
+						<reference key="IBUIBackgroundColor" ref="381743120"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="453948989">
@@ -69,7 +69,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="342724815"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="74914011"/>
+						<reference key="IBUIBackgroundColor" ref="381743120"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIImageView" id="373281412">
@@ -95,7 +95,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="340057519"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="74914011"/>
+						<reference key="IBUIBackgroundColor" ref="381743120"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="370567457">
@@ -106,7 +106,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="453948989"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="74914011"/>
+						<reference key="IBUIBackgroundColor" ref="381743120"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="342724815">
@@ -117,7 +117,7 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="402183491"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="74914011"/>
+						<reference key="IBUIBackgroundColor" ref="381743120"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIImageView" id="784510233">
@@ -334,6 +334,14 @@
 					</object>
 					<int key="connectionID">124</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">stopImageview</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="381377381"/>
+					</object>
+					<int key="connectionID">125</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -471,13 +479,32 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">124</int>
+			<int key="maxID">125</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">ViewController</string>
 					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="didTapStartButton:">id</string>
+						<string key="didTapStopButton:">id</string>
+						<string key="didTapTickButton:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="didTapStartButton:">
+							<string key="name">didTapStartButton:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="didTapStopButton:">
+							<string key="name">didTapStopButton:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="didTapTickButton:">
+							<string key="name">didTapTickButton:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="downAmber">UIView</string>
 						<string key="downGreen">UIView</string>
