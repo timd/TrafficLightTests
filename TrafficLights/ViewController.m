@@ -23,6 +23,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *tickButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;
 
+@property (nonatomic, strong) NSArray *upLights;
+@property (nonatomic, strong) NSArray *downLights;
+
 @end
 
 @implementation ViewController
@@ -33,7 +36,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    // Setup initial state of lights
+    self.upLights = @[self.upRed, self.upAmber, self.upGreen];
+    self.downLights = @[self.downRed, self.downAmber, self.downGreen];
+    
+    for (UIView *light in self.upLights) {
+        [light setBackgroundColor:[UIColor blackColor]];
+    }
+    
+    for (UIView *light in self.downLights) {
+        [light setBackgroundColor:[UIColor blackColor]];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

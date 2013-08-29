@@ -20,14 +20,24 @@ describe(@"The user interface", ^{
     
     context(@"when in the default state", ^{
         
+        __block ViewController *vc = nil;
+        
         beforeAll(^{
         });
         
         beforeEach(^{
-            
+            vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+            [vc view];
         });
         
         it(@"should show all lights as black", ^{
+            [[vc.upRed.backgroundColor should] equal:[UIColor blackColor]];
+            [[vc.upAmber.backgroundColor should] equal:[UIColor blackColor]];
+            [[vc.upGreen.backgroundColor should] equal:[UIColor blackColor]];
+            
+            [[vc.downRed.backgroundColor should] equal:[UIColor blackColor]];
+            [[vc.downAmber.backgroundColor should] equal:[UIColor blackColor]];
+            [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
         });
         
         afterEach(^{
