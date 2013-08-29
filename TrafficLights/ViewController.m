@@ -61,6 +61,8 @@
 #pragma Button methods
 
 - (IBAction)didTapStartButton:(id)sender {
+    [self.upRed setBackgroundColor:[UIColor redColor]];
+    [self.downRed setBackgroundColor:[UIColor redColor]];
 }
 
 - (IBAction)didTapTickButton:(id)sender {
