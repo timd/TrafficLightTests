@@ -78,6 +78,13 @@ describe(@"The user interface", ^{
     
     context(@"when responding to user input", ^{
         
+        it(@"should lock the 'tick' button until the start button has been tapped", ^{
+            [[theValue(vc.tickButton.enabled) should] equal:theValue(NO)];
+            [vc didTapStartButton:nil];
+            [[theValue(vc.tickButton.enabled) should] equal:theValue(YES)];
+            [[theValue(vc.startButton.enabled) should] equal:theValue(NO)];
+        });
+        
        it(@"should turn both red lights on in response to the start button", ^{
            [vc didTapStartButton:nil];
            [[vc.upRed.backgroundColor should] equal:[UIColor redColor]];
@@ -97,10 +104,9 @@ describe(@"The user interface", ^{
             [vc didTapTickButton:nil];
         });
 
-        
     });
+
     
-   
 });
 
 SPEC_END
