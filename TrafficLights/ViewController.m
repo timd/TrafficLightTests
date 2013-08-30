@@ -68,14 +68,59 @@
     
     [self.tickButton setEnabled:YES];
     [self.startButton setEnabled:NO];
+    [self.delegate tick];
     
 }
 
 - (IBAction)didTapTickButton:(id)sender {
-    [self.delegate tick];
+    
+    NSNumber *lightCode = [self.delegate tick];
+    [self updateLightsForCode:lightCode];
+    
 }
 
 - (IBAction)didTapStopButton:(id)sender {
+}
+
+#pragma mark -
+#pragma mark Lights update methods
+
+-(void)updateLightsForCode:(NSNumber *)lightsCode {
+    
+    [self.upRed setBackgroundColor:[UIColor blackColor]];
+    [self.upAmber setBackgroundColor:[UIColor blackColor]];
+    [self.upGreen setBackgroundColor:[UIColor blackColor]];
+    
+    [self.downRed setBackgroundColor:[UIColor blackColor]];
+    [self.downAmber setBackgroundColor:[UIColor blackColor]];
+    [self.downGreen setBackgroundColor:[UIColor blackColor]];
+    
+    int lights = [lightsCode intValue];
+    
+    if ((lights & 32) == 32) {
+        [self.upRed setBackgroundColor:[UIColor redColor]];
+    }
+    
+    if ((lights & 16) == 16) {
+        [self.upAmber setBackgroundColor:[UIColor yellowColor]];
+    }
+    
+    if ((lights & 8) == 8) {
+        [self.upGreen setBackgroundColor:[UIColor greenColor]];
+    }
+    
+    if ((lights & 4) == 4) {
+        [self.downRed setBackgroundColor:[UIColor redColor]];
+    }
+    
+    if ((lights & 2) == 2) {
+        [self.downAmber setBackgroundColor:[UIColor yellowColor]];
+    }
+    
+    if ((lights & 1) == 1) {
+        [self.downGreen setBackgroundColor:[UIColor greenColor]];
+    }
+    
 }
 
 @end
