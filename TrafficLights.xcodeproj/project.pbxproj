@@ -32,6 +32,7 @@
 		22470DA317CFA0DB0073CC2F /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9D17CFA0DB0073CC2F /* stop@2x.png */; };
 		22470DA517CFA2600073CC2F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22470DA417CFA2600073CC2F /* ViewController.xib */; };
 		22470DA917CFA4370073CC2F /* UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22470DA817CFA4370073CC2F /* UITests.m */; };
+		22882A2917D0B7E800E42DD6 /* LightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22882A2817D0B7E800E42DD6 /* LightsTests.m */; };
 		5C0AD4E6990044FBAE866948 /* libPods-TrafficLightsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EA8BF3893E4C5D8AF4618D /* libPods-TrafficLightsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		22470D9D17CFA0DB0073CC2F /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
 		22470DA417CFA2600073CC2F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		22470DA817CFA4370073CC2F /* UITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITests.m; sourceTree = "<group>"; };
+		22882A2817D0B7E800E42DD6 /* LightsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightsTests.m; sourceTree = "<group>"; };
 		A072BC1011E64A7DB0F30D3A /* Pods-TrafficLightsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficLightsTests.xcconfig"; path = "Pods/Pods-TrafficLightsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B1EA8BF3893E4C5D8AF4618D /* libPods-TrafficLightsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrafficLightsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				22470DA817CFA4370073CC2F /* UITests.m */,
+				22882A2817D0B7E800E42DD6 /* LightsTests.m */,
 			);
 			name = "UI tests";
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				2228B6F117CF4E3600D39BA8 /* TrafficLightsTests.m in Sources */,
 				2228B70117CF50C300D39BA8 /* ModelTests.m in Sources */,
 				22470DA917CFA4370073CC2F /* UITests.m in Sources */,
+				22882A2917D0B7E800E42DD6 /* LightsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
