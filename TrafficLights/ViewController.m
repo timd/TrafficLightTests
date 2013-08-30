@@ -48,7 +48,9 @@
     for (UIView *light in self.downLights) {
         [light setBackgroundColor:[UIColor blackColor]];
     }
-    
+
+    [self.tickButton setEnabled:NO];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,6 +65,10 @@
 - (IBAction)didTapStartButton:(id)sender {
     [self.upRed setBackgroundColor:[UIColor redColor]];
     [self.downRed setBackgroundColor:[UIColor redColor]];
+    
+    [self.tickButton setEnabled:YES];
+    [self.startButton setEnabled:NO];
+    
 }
 
 - (IBAction)didTapTickButton:(id)sender {
