@@ -64,6 +64,7 @@
     [self.downRed setBackgroundColor:[UIColor redColor]];
     
     [self.tickButton setEnabled:YES];
+    [self.stopButton setEnabled:YES];
     [self.startButton setEnabled:NO];
     [self.delegate tick];
     
