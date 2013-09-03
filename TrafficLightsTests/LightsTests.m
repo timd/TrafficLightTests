@@ -1,3 +1,8 @@
+//
+//  Created by Tim on 29/08/2013.
+//  Copyright (c) 2013 Charismatic Megafauna Ltd. All rights reserved.
+//
+
 #import "Kiwi.h"
 
 #import "LightEngine.h"
@@ -44,7 +49,7 @@ describe(@"The traffic lights", ^{
             [[vc should] respondToSelector:@selector(updateLightsForCode:)];
         });
         
-        it(@"should show RxxRxx when sent the @164 code", ^{
+        it(@"should show Rxx Rxx when sent the @164 code", ^{
             [vc updateLightsForCode:@164];
             
             [[vc.upRed.backgroundColor should] equal:[UIColor redColor]];
@@ -55,7 +60,7 @@ describe(@"The traffic lights", ^{
             [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
         });
         
-        it(@"should show RAxRxx when sent the @180 code", ^{
+        it(@"should show RAx Rxx when sent the @180 code", ^{
             [vc updateLightsForCode:@180];
             
             [[vc.upRed.backgroundColor should] equal:[UIColor redColor]];
@@ -66,7 +71,7 @@ describe(@"The traffic lights", ^{
             [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
         });
         
-        it(@"should show xxGRxx when sent the @140 code", ^{
+        it(@"should show xxG Rxx when sent the @140 code", ^{
             [vc updateLightsForCode:@140];
             
             [[vc.upRed.backgroundColor should] equal:[UIColor blackColor]];
@@ -77,7 +82,7 @@ describe(@"The traffic lights", ^{
             [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
         });
         
-        it(@"should show xAxRxx when sent the @148 code", ^{
+        it(@"should show xAx Rxx when sent the @148 code", ^{
             [vc updateLightsForCode:@148];
             
             [[vc.upRed.backgroundColor should] equal:[UIColor blackColor]];
@@ -88,7 +93,7 @@ describe(@"The traffic lights", ^{
             [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
         });
         
-        it(@"should show RxxRxx when sent the @100 code", ^{
+        it(@"should show Rxx Rxx when sent the @100 code", ^{
             [vc updateLightsForCode:@100];
             
             [[vc.upRed.backgroundColor should] equal:[UIColor redColor]];
@@ -99,7 +104,7 @@ describe(@"The traffic lights", ^{
             [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
         });
         
-        it(@"should show RxxRAx when sent the @102 code", ^{
+        it(@"should show Rxx RAx when sent the @102 code", ^{
             [vc updateLightsForCode:@102];
             
             [[vc.upRed.backgroundColor should] equal:[UIColor redColor]];
@@ -110,7 +115,7 @@ describe(@"The traffic lights", ^{
             [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
         });
         
-        it(@"should show RxxxxG when sent the @97 code", ^{
+        it(@"should show Rxx xxG when sent the @97 code", ^{
             [vc updateLightsForCode:@97];
             
             [[vc.upRed.backgroundColor should] equal:[UIColor redColor]];
@@ -121,7 +126,7 @@ describe(@"The traffic lights", ^{
             [[vc.downGreen.backgroundColor should] equal:[UIColor greenColor]];
         });
         
-        it(@"should show RxxxAx when sent the @98 code", ^{
+        it(@"should show Rxx xAx when sent the @98 code", ^{
             [vc updateLightsForCode:@98];
             
             [[vc.upRed.backgroundColor should] equal:[UIColor redColor]];

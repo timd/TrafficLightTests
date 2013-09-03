@@ -1,7 +1,4 @@
 //
-//  ViewController.m
-//  TrafficLights
-//
 //  Created by Tim on 29/08/2013.
 //  Copyright (c) 2013 Charismatic Megafauna Ltd. All rights reserved.
 //
@@ -80,6 +77,17 @@
 }
 
 - (IBAction)didTapStopButton:(id)sender {
+    [self.upRed setBackgroundColor:[UIColor redColor]];
+    [self.upAmber setBackgroundColor:[UIColor blackColor]];
+    [self.upGreen setBackgroundColor:[UIColor blackColor]];
+    
+    [self.downRed setBackgroundColor:[UIColor redColor]];
+    [self.downAmber setBackgroundColor:[UIColor blackColor]];
+    [self.downGreen setBackgroundColor:[UIColor blackColor]];
+    
+    [self.tickButton setEnabled:NO];
+    [self.stopButton setEnabled:NO];
+    [self.startButton setEnabled:YES];
 }
 
 #pragma mark -

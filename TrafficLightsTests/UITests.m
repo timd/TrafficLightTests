@@ -1,3 +1,8 @@
+//
+//  Created by Tim on 29/08/2013.
+//  Copyright (c) 2013 Charismatic Megafauna Ltd. All rights reserved.
+//
+
 #import "Kiwi.h"
 #import "ViewController.h"
 #import "AppDelegate.h"
@@ -24,26 +29,6 @@
 
 SPEC_BEGIN(UITests)
 
-describe(@"The view controller", ^{
-    
-    __block ViewController *vc = nil;
-    
-    beforeEach(^{
-        vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    });
-    
-    it(@"should have a delegate property", ^{
-        [[vc should] respondToSelector:@selector(delegate)];
-    });
-    
-    it(@"should have a delegate set when it is instantiated", ^{
-        AppDelegate *appDelegate = [[AppDelegate alloc] init];
-        [appDelegate application:nil didFinishLaunchingWithOptions:nil];
-        [[(NSObject *)appDelegate.viewController.delegate should] conformToProtocol:@protocol(LightEngineProtocol)];
-    });
-    
-});
-
 describe(@"The user interface", ^{
 
     __block ViewController *vc = nil;
@@ -54,6 +39,20 @@ describe(@"The user interface", ^{
     beforeEach(^{
         vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
         [vc view];
+    });
+    
+    context(@"when instantiated", ^{
+
+        it(@"should have a delegate property", ^{
+            [[vc should] respondToSelector:@selector(delegate)];
+        });
+        
+        it(@"should have the delegate set", ^{
+            AppDelegate *appDelegate = [[AppDelegate alloc] init];
+            [appDelegate application:nil didFinishLaunchingWithOptions:nil];
+            [[(NSObject *)appDelegate.viewController.delegate should] conformToProtocol:@protocol(LightEngineProtocol)];
+        });
+
     });
     
     context(@"when in the default state", ^{
@@ -103,9 +102,40 @@ describe(@"The user interface", ^{
             [[delegateMock should] receive:@selector(tick) andReturn:@164];
             [vc didTapTickButton:nil];
         });
+        
+        it(@"should turn both lights red in response to the stop button", ^{
+            [vc didTapStopButton:nil];
+            [[vc.upRed.backgroundColor should] equal:[UIColor redColor]];
+            [[vc.upAmber.backgroundColor should] equal:[UIColor blackColor]];
+            [[vc.upGreen.backgroundColor should] equal:[UIColor blackColor]];
+            
+            [[vc.downRed.backgroundColor should] equal:[UIColor redColor]];
+            [[vc.downAmber.backgroundColor should] equal:[UIColor blackColor]];
+            [[vc.downGreen.backgroundColor should] equal:[UIColor blackColor]];
+        });
+        
+        describe(@"and handling stop button interaction", ^{
+            
+            beforeEach(^{
+                [vc didTapStartButton:nil];
+                [[theValue(vc.tickButton.enabled) should] beTrue];
+                [[theValue(vc.stopButton.enabled) should] beTrue];
+                
+                [vc didTapStopButton:nil];
+            });
+        
+            it(@"should lock the tick and stop buttons after tapping the stop button", ^{
+                [[theValue(vc.tickButton.enabled) should] beFalse];
+                [[theValue(vc.stopButton.enabled) should] beFalse];
+            });
+            
+            it(@"should unlock the start button after tapping the stop button", ^{
+                [[theValue(vc.startButton.enabled) should] beTrue];
+            });
+
+        });
 
     });
-
     
 });
 
