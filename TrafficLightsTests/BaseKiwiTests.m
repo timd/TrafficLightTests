@@ -1,6 +1,6 @@
 #import "Kiwi.h"
 
-SPEC_BEGIN(TrafficLightsTests)
+SPEC_BEGIN(BaseKiwiTests)
 
 describe(@"When testing the traffic lights", ^{
     

@@ -21,7 +21,7 @@
 		2228B6E517CF4E3600D39BA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2228B6BF17CF4E3600D39BA8 /* UIKit.framework */; };
 		2228B6E617CF4E3600D39BA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2228B6C117CF4E3600D39BA8 /* Foundation.framework */; };
 		2228B6EE17CF4E3600D39BA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2228B6EC17CF4E3600D39BA8 /* InfoPlist.strings */; };
-		2228B6F117CF4E3600D39BA8 /* TrafficLightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228B6F017CF4E3600D39BA8 /* TrafficLightsTests.m */; };
+		2228B6F117CF4E3600D39BA8 /* BaseKiwiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228B6F017CF4E3600D39BA8 /* BaseKiwiTests.m */; };
 		2228B70117CF50C300D39BA8 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228B70017CF50C300D39BA8 /* ModelTests.m */; };
 		2228B70417CF5DA900D39BA8 /* LightEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2228B70317CF5DA900D39BA8 /* LightEngine.m */; };
 		22470D9E17CFA0DB0073CC2F /* lights.png in Resources */ = {isa = PBXBuildFile; fileRef = 22470D9817CFA0DB0073CC2F /* lights.png */; };
@@ -66,7 +66,7 @@
 		2228B6E317CF4E3600D39BA8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2228B6EB17CF4E3600D39BA8 /* TrafficLightsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrafficLightsTests-Info.plist"; sourceTree = "<group>"; };
 		2228B6ED17CF4E3600D39BA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2228B6F017CF4E3600D39BA8 /* TrafficLightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficLightsTests.m; sourceTree = "<group>"; };
+		2228B6F017CF4E3600D39BA8 /* BaseKiwiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseKiwiTests.m; sourceTree = "<group>"; };
 		2228B70017CF50C300D39BA8 /* ModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
 		2228B70217CF5DA900D39BA8 /* LightEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightEngine.h; sourceTree = "<group>"; };
 		2228B70317CF5DA900D39BA8 /* LightEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightEngine.m; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		2228B6FD17CF50A600D39BA8 /* Base tests */ = {
 			isa = PBXGroup;
 			children = (
-				2228B6F017CF4E3600D39BA8 /* TrafficLightsTests.m */,
+				2228B6F017CF4E3600D39BA8 /* BaseKiwiTests.m */,
 			);
 			name = "Base tests";
 			sourceTree = "<group>";
@@ -411,7 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2228B6F117CF4E3600D39BA8 /* TrafficLightsTests.m in Sources */,
+				2228B6F117CF4E3600D39BA8 /* BaseKiwiTests.m in Sources */,
 				2228B70117CF50C300D39BA8 /* ModelTests.m in Sources */,
 				22470DA917CFA4370073CC2F /* UITests.m in Sources */,
 				22882A2917D0B7E800E42DD6 /* LightsTests.m in Sources */,
