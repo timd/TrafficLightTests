@@ -1,6 +1,10 @@
 #import "Kiwi.h"
 #import "LightEngine.h"
 
+@interface LightEngine (ModelTests)
+@property (nonatomic) NSUInteger tickCount;
+@end
+
 SPEC_BEGIN(ModelTests)
 
 describe(@"The model", ^{
@@ -54,6 +58,22 @@ describe(@"The model", ^{
             
         });
             
+    });
+    
+    context(@"when stopping", ^{
+        
+        it(@"should respond to the stop message", ^{
+            [[engine should] respondToSelector:@selector(stopSequence)];
+        });
+        
+        it(@"should reset the tickCount back to zero in response to a stop message", ^{
+            [[theValue([engine tickCount]) should] equal:theValue(0)];
+            [engine tick];
+            [[theValue([engine tickCount]) should] equal:theValue(1)];
+            [engine stopSequence];
+            [[theValue([engine tickCount]) should] equal:theValue(0)];
+        });
+        
     });
     
     afterEach(^{

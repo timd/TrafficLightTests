@@ -47,4 +47,8 @@
     
 }
 
+-(void)stopSequence {
+    self.tickCount = 0;
+}
+
 @end

@@ -2,6 +2,7 @@
 
 @protocol LightEngineProtocol <NSObject>
 -(NSNumber *)tick;
+-(void)stopSequence;
 @end
 
 @interface ViewController : UIViewController

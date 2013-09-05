@@ -47,6 +47,9 @@
     }
 
     [self.tickButton setEnabled:NO];
+    [self.stopButton setEnabled:NO];
+    
+    [self.startButton.titleLabel setTextColor:[UIColor blackColor]];
 
 }
 
@@ -60,11 +63,18 @@
 #pragma Button methods
 
 - (IBAction)didTapStartButton:(id)sender {
+    
     [self.upRed setBackgroundColor:[UIColor redColor]];
     [self.downRed setBackgroundColor:[UIColor redColor]];
     
     [self.tickButton setEnabled:YES];
+    [self.tickButton.titleLabel setTextColor:[UIColor blackColor]];
+    
     [self.startButton setEnabled:NO];
+    
+    [self.stopButton setEnabled:YES];
+    [self.stopButton.titleLabel setTextColor:[UIColor blackColor]];
+
     [self.delegate tick];
     
 }
@@ -74,20 +84,26 @@
     NSNumber *lightCode = [self.delegate tick];
     [self updateLightsForCode:lightCode];
     
+    [self.tickButton.titleLabel setTextColor:[UIColor blackColor]];
+    
 }
 
 - (IBAction)didTapStopButton:(id)sender {
-    [self.upRed setBackgroundColor:[UIColor redColor]];
+    [self.upRed setBackgroundColor:[UIColor blackColor]];
     [self.upAmber setBackgroundColor:[UIColor blackColor]];
     [self.upGreen setBackgroundColor:[UIColor blackColor]];
     
-    [self.downRed setBackgroundColor:[UIColor redColor]];
+    [self.downRed setBackgroundColor:[UIColor blackColor]];
     [self.downAmber setBackgroundColor:[UIColor blackColor]];
     [self.downGreen setBackgroundColor:[UIColor blackColor]];
     
     [self.tickButton setEnabled:NO];
     [self.stopButton setEnabled:NO];
+    
     [self.startButton setEnabled:YES];
+    [self.startButton.titleLabel setTextColor:[UIColor blackColor]];
+    
+    [self.delegate stopSequence];
 }
 
 #pragma mark -

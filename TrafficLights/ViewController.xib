@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1552</int>
-		<string key="IBDocument.SystemVersion">13A558</string>
+		<string key="IBDocument.SystemVersion">13A569</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1249.11</string>
-		<string key="IBDocument.HIToolboxVersion">691.00</string>
+		<string key="IBDocument.AppKitVersion">1251</string>
+		<string key="IBDocument.HIToolboxVersion">694.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">2083</string>
@@ -150,10 +150,7 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUINormalTitleColor" ref="381743120"/>
 						<object class="NSColor" key="IBUINormalTitleShadowColor" id="575963693">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
@@ -183,10 +180,7 @@
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Tick</string>
 						<reference key="IBUIHighlightedTitleColor" ref="342935285"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUINormalTitleColor" ref="381743120"/>
 						<reference key="IBUINormalTitleShadowColor" ref="575963693"/>
 						<reference key="IBUIFontDescription" ref="410070247"/>
 						<reference key="IBUIFont" ref="758284828"/>
@@ -197,6 +191,7 @@
 						<string key="NSFrame">{{109, 485}, {103, 44}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -205,10 +200,7 @@
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Stop</string>
 						<reference key="IBUIHighlightedTitleColor" ref="342935285"/>
-						<object class="NSColor" key="IBUINormalTitleColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
-						</object>
+						<reference key="IBUINormalTitleColor" ref="381743120"/>
 						<reference key="IBUINormalTitleShadowColor" ref="575963693"/>
 						<reference key="IBUIFontDescription" ref="410070247"/>
 						<reference key="IBUIFont" ref="758284828"/>

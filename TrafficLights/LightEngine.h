@@ -3,4 +3,5 @@
 
 @interface LightEngine : NSObject <LightEngineProtocol>
 -(NSNumber *)tick;
+-(void)stopSequence;
 @end
