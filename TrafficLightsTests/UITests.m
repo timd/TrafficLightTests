@@ -68,12 +68,12 @@ describe(@"The user interface", ^{
         });
         
         it(@"should show the tick and stop buttons as greyed out", ^{
-            [[vc.tickButton.titleLabel.textColor shouldNot] equal:[UIColor blackColor]];
-            [[vc.stopButton.titleLabel.textColor shouldNot] equal:[UIColor blackColor]];
+            [[theValue(vc.tickButton.alpha) should] equal:theValue(0.5f)];
+            [[theValue(vc.stopButton.alpha) should] equal:theValue(0.5f)];
         });
         
         it(@"should show the start button as active", ^{
-            [[vc.startButton.titleLabel.textColor should] equal:[UIColor blackColor]];
+            [[theValue(vc.startButton.alpha) should] equal:theValue(1.0f)];
         });
         
         afterEach(^{
@@ -100,13 +100,13 @@ describe(@"The user interface", ^{
         
         it(@"should show the stop and tick buttons as active after the start button has been tapped", ^{
             [vc didTapStartButton:nil];
-            [[vc.stopButton.titleLabel.textColor should] equal:[UIColor blackColor]];
-            [[vc.tickButton.titleLabel.textColor should] equal:[UIColor blackColor]];
+            [[theValue(vc.stopButton.alpha) should] equal:theValue(1.0f)];
+            [[theValue(vc.tickButton.alpha) should] equal:theValue(1.0f)];
         });
         
         it(@"should show the start button as inactive after the start button has been tapped", ^{
             [vc didTapStartButton:nil];
-            [[vc.startButton.titleLabel.textColor shouldNot] equal:[UIColor blackColor]];
+            [[theValue(vc.startButton.alpha) should] equal:theValue(0.5f)];
         });
         
        it(@"should turn both red lights on in response to the start button", ^{
@@ -122,9 +122,9 @@ describe(@"The user interface", ^{
         
         it(@"should show the tick button as active after each tick", ^{
             [vc didTapStartButton:nil];
-            [[vc.tickButton.titleLabel.textColor should] equal:[UIColor blackColor]];
+            [[theValue(vc.tickButton.alpha) should] equal:theValue(1.0f)];
             [vc didTapTickButton:nil];
-            [[vc.tickButton.titleLabel.textColor should] equal:[UIColor blackColor]];
+            [[theValue(vc.tickButton.alpha) should] equal:theValue(1.0f)];
         });
         
         it(@"should send a 'tick' message to the delegate when the Tick button is tapped", ^{
@@ -165,12 +165,12 @@ describe(@"The user interface", ^{
             });
             
             it(@"should show the tick and stop buttons as inactive", ^{
-                [[vc.tickButton.titleLabel.textColor shouldNot] equal:[UIColor blackColor]];
-                [[vc.stopButton.titleLabel.textColor shouldNot] equal:[UIColor blackColor]];
+                [[theValue(vc.tickButton.alpha) should] equal:theValue(0.5f)];
+                [[theValue(vc.stopButton.alpha) should] equal:theValue(0.5f)];
             });
             
             it(@"should show the start button as active", ^{
-                [[vc.startButton.titleLabel.textColor should] equal:[UIColor blackColor]];
+                [[theValue(vc.startButton.alpha) should] equal:theValue(1.0f)];
             });
             
             it(@"should send the stopSequence message to the delegate when tapping the stop button", ^{

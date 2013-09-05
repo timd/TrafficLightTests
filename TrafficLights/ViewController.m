@@ -49,7 +49,7 @@
     [self.tickButton setEnabled:NO];
     [self.stopButton setEnabled:NO];
     
-    [self.startButton.titleLabel setTextColor:[UIColor blackColor]];
+    [self.startButton setAlpha:1.0f];
 
 }
 
@@ -68,13 +68,14 @@
     [self.downRed setBackgroundColor:[UIColor redColor]];
     
     [self.tickButton setEnabled:YES];
-    [self.tickButton.titleLabel setTextColor:[UIColor blackColor]];
+    [self.tickButton setAlpha:1.0f];
     
     [self.startButton setEnabled:NO];
+    [self.startButton setAlpha:0.5f];
     
     [self.stopButton setEnabled:YES];
-    [self.stopButton.titleLabel setTextColor:[UIColor blackColor]];
-
+    [self.stopButton setAlpha:1.0f];
+    
     [self.delegate tick];
     
 }
@@ -98,10 +99,13 @@
     [self.downGreen setBackgroundColor:[UIColor blackColor]];
     
     [self.tickButton setEnabled:NO];
+    [self.tickButton setAlpha:0.5f];
+    
     [self.stopButton setEnabled:NO];
+    [self.stopButton setAlpha:0.5f];
     
     [self.startButton setEnabled:YES];
-    [self.startButton.titleLabel setTextColor:[UIColor blackColor]];
+    [self.startButton setAlpha:1.0f];
     
     [self.delegate stopSequence];
 }
