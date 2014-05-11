@@ -1,29 +1,154 @@
 //
-//  ViewController.m
-//  TrafficLights
-//
-//  Created by Tim on 11/05/14.
-//  Copyright (c) 2014 Charismatic Megafauna Ltd. All rights reserved.
+//  Created by Tim on 29/08/2013.
+//  Copyright (c) 2013 Charismatic Megafauna Ltd. All rights reserved.
 //
 
 #import "ViewController.h"
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *upRed;
+@property (weak, nonatomic) IBOutlet UIView *upAmber;
+@property (weak, nonatomic) IBOutlet UIView *upGreen;
+@property (weak, nonatomic) IBOutlet UIView *downRed;
+@property (weak, nonatomic) IBOutlet UIView *downAmber;
+@property (weak, nonatomic) IBOutlet UIView *downGreen;
+
+@property (weak, nonatomic) IBOutlet UIImageView *stopImageview;
+
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIButton *tickButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
+
+@property (nonatomic, strong) NSArray *upLights;
+@property (nonatomic, strong) NSArray *downLights;
+
 @end
 
 @implementation ViewController
 
+#pragma mark -
+#pragma mark View lifecycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    // Setup initial state of lights
+    self.upLights = @[self.upRed, self.upAmber, self.upGreen];
+    self.downLights = @[self.downRed, self.downAmber, self.downGreen];
+    
+    for (UIView *light in self.upLights) {
+        [light setBackgroundColor:[UIColor blackColor]];
+    }
+    
+    for (UIView *light in self.downLights) {
+        [light setBackgroundColor:[UIColor blackColor]];
+    }
+
+    [self.tickButton setEnabled:NO];
+    [self.stopButton setEnabled:NO];
+    
+    [self.startButton setAlpha:1.0f];
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+#pragma Button methods
+
+- (IBAction)didTapStartButton:(id)sender {
+    
+    [self.upRed setBackgroundColor:[UIColor redColor]];
+    [self.downRed setBackgroundColor:[UIColor redColor]];
+    
+    [self.tickButton setEnabled:YES];
+    [self.tickButton setAlpha:1.0f];
+    
+    [self.startButton setEnabled:NO];
+    [self.startButton setAlpha:0.5f];
+    
+    [self.stopButton setEnabled:YES];
+    [self.stopButton setAlpha:1.0f];
+    
+    [self.delegate tick];
+    
+}
+
+- (IBAction)didTapTickButton:(id)sender {
+    
+    NSNumber *lightCode = [self.delegate tick];
+    [self updateLightsForCode:lightCode];
+    
+    [self.tickButton.titleLabel setTextColor:[UIColor blackColor]];
+    
+}
+
+- (IBAction)didTapStopButton:(id)sender {
+    [self.upRed setBackgroundColor:[UIColor blackColor]];
+    [self.upAmber setBackgroundColor:[UIColor blackColor]];
+    [self.upGreen setBackgroundColor:[UIColor blackColor]];
+    
+    [self.downRed setBackgroundColor:[UIColor blackColor]];
+    [self.downAmber setBackgroundColor:[UIColor blackColor]];
+    [self.downGreen setBackgroundColor:[UIColor blackColor]];
+    
+    [self.tickButton setEnabled:NO];
+    [self.tickButton setAlpha:0.5f];
+    
+    [self.stopButton setEnabled:NO];
+    [self.stopButton setAlpha:0.5f];
+    
+    [self.startButton setEnabled:YES];
+    [self.startButton setAlpha:1.0f];
+    
+    [self.delegate stopSequence];
+}
+
+#pragma mark -
+#pragma mark Lights update methods
+
+-(void)updateLightsForCode:(NSNumber *)lightsCode {
+    
+    [self.upRed setBackgroundColor:[UIColor blackColor]];
+    [self.upAmber setBackgroundColor:[UIColor blackColor]];
+    [self.upGreen setBackgroundColor:[UIColor blackColor]];
+    
+    [self.downRed setBackgroundColor:[UIColor blackColor]];
+    [self.downAmber setBackgroundColor:[UIColor blackColor]];
+    [self.downGreen setBackgroundColor:[UIColor blackColor]];
+    
+    int lights = [lightsCode intValue];
+    
+    if ((lights & 32) == 32) {
+        [self.upRed setBackgroundColor:[UIColor redColor]];
+    }
+    
+    if ((lights & 16) == 16) {
+        [self.upAmber setBackgroundColor:[UIColor yellowColor]];
+    }
+    
+    if ((lights & 8) == 8) {
+        [self.upGreen setBackgroundColor:[UIColor greenColor]];
+    }
+    
+    if ((lights & 4) == 4) {
+        [self.downRed setBackgroundColor:[UIColor redColor]];
+    }
+    
+    if ((lights & 2) == 2) {
+        [self.downAmber setBackgroundColor:[UIColor yellowColor]];
+    }
+    
+    if ((lights & 1) == 1) {
+        [self.downGreen setBackgroundColor:[UIColor greenColor]];
+    }
+    
 }
 
 @end

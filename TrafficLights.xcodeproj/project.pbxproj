@@ -13,14 +13,26 @@
 		229942B1191FB37700D83759 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 229942AF191FB37700D83759 /* InfoPlist.strings */; };
 		229942B3191FB37700D83759 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942B2191FB37700D83759 /* main.m */; };
 		229942B7191FB37700D83759 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942B6191FB37700D83759 /* AppDelegate.m */; };
-		229942BA191FB37700D83759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229942B8191FB37700D83759 /* Main.storyboard */; };
-		229942BD191FB37700D83759 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942BC191FB37700D83759 /* ViewController.m */; };
 		229942BF191FB37700D83759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229942BE191FB37700D83759 /* Images.xcassets */; };
 		229942C6191FB37700D83759 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229942C5191FB37700D83759 /* XCTest.framework */; };
 		229942C7191FB37700D83759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229942A6191FB37700D83759 /* Foundation.framework */; };
 		229942C8191FB37700D83759 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229942AA191FB37700D83759 /* UIKit.framework */; };
 		229942D0191FB37700D83759 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 229942CE191FB37700D83759 /* InfoPlist.strings */; };
 		229942D2191FB37700D83759 /* TrafficLightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942D1191FB37700D83759 /* TrafficLightsTests.m */; };
+		229942DD191FB3E300D83759 /* LightEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942DC191FB3E300D83759 /* LightEngine.m */; };
+		229942E1191FB41A00D83759 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942DF191FB41A00D83759 /* ViewController.m */; };
+		229942E2191FB41A00D83759 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229942E0191FB41A00D83759 /* ViewController.xib */; };
+		229942EA191FB48300D83759 /* lights.png in Resources */ = {isa = PBXBuildFile; fileRef = 229942E4191FB48300D83759 /* lights.png */; };
+		229942EB191FB48300D83759 /* lights@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 229942E5191FB48300D83759 /* lights@2x.png */; };
+		229942EC191FB48300D83759 /* noEntry.png in Resources */ = {isa = PBXBuildFile; fileRef = 229942E6191FB48300D83759 /* noEntry.png */; };
+		229942ED191FB48300D83759 /* noEntry@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 229942E7191FB48300D83759 /* noEntry@2x.jpg */; };
+		229942EE191FB48300D83759 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 229942E8191FB48300D83759 /* stop.png */; };
+		229942EF191FB48300D83759 /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 229942E9191FB48300D83759 /* stop@2x.png */; };
+		229942F1191FB5B800D83759 /* ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942F0191FB5B800D83759 /* ModelTests.m */; };
+		229942F4191FB5F000D83759 /* BaseKiwiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942F3191FB5F000D83759 /* BaseKiwiTests.m */; };
+		229942F7191FB62600D83759 /* UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942F6191FB62600D83759 /* UITests.m */; };
+		229942FA191FB68600D83759 /* LightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229942F9191FB68600D83759 /* LightsTests.m */; };
+		30D0CD4A3379428AAA546098 /* libPods-TrafficLightsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FEA89FF53F439E8E905316 /* libPods-TrafficLightsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +56,29 @@
 		229942B4191FB37700D83759 /* TrafficLights-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrafficLights-Prefix.pch"; sourceTree = "<group>"; };
 		229942B5191FB37700D83759 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		229942B6191FB37700D83759 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		229942B9191FB37700D83759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		229942BB191FB37700D83759 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		229942BC191FB37700D83759 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		229942BE191FB37700D83759 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		229942C4191FB37700D83759 /* TrafficLightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficLightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		229942C5191FB37700D83759 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		229942CD191FB37700D83759 /* TrafficLightsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrafficLightsTests-Info.plist"; sourceTree = "<group>"; };
 		229942CF191FB37700D83759 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		229942D1191FB37700D83759 /* TrafficLightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficLightsTests.m; sourceTree = "<group>"; };
+		229942DB191FB3E300D83759 /* LightEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightEngine.h; sourceTree = "<group>"; };
+		229942DC191FB3E300D83759 /* LightEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightEngine.m; sourceTree = "<group>"; };
+		229942DE191FB41A00D83759 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		229942DF191FB41A00D83759 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		229942E0191FB41A00D83759 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		229942E4191FB48300D83759 /* lights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lights.png; sourceTree = "<group>"; };
+		229942E5191FB48300D83759 /* lights@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lights@2x.png"; sourceTree = "<group>"; };
+		229942E6191FB48300D83759 /* noEntry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noEntry.png; sourceTree = "<group>"; };
+		229942E7191FB48300D83759 /* noEntry@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "noEntry@2x.jpg"; sourceTree = "<group>"; };
+		229942E8191FB48300D83759 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		229942E9191FB48300D83759 /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
+		229942F0191FB5B800D83759 /* ModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTests.m; sourceTree = "<group>"; };
+		229942F3191FB5F000D83759 /* BaseKiwiTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseKiwiTests.m; sourceTree = "<group>"; };
+		229942F6191FB62600D83759 /* UITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITests.m; sourceTree = "<group>"; };
+		229942F9191FB68600D83759 /* LightsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightsTests.m; sourceTree = "<group>"; };
+		B1FEA89FF53F439E8E905316 /* libPods-TrafficLightsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrafficLightsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4AAAC7CAFD413EAD918504 /* Pods-TrafficLightsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficLightsTests.xcconfig"; path = "Pods/Pods-TrafficLightsTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +99,7 @@
 				229942C6191FB37700D83759 /* XCTest.framework in Frameworks */,
 				229942C8191FB37700D83759 /* UIKit.framework in Frameworks */,
 				229942C7191FB37700D83759 /* Foundation.framework in Frameworks */,
+				30D0CD4A3379428AAA546098 /* libPods-TrafficLightsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +109,12 @@
 		2299429A191FB37700D83759 = {
 			isa = PBXGroup;
 			children = (
+				229942E3191FB48300D83759 /* assets */,
 				229942AC191FB37700D83759 /* TrafficLights */,
 				229942CB191FB37700D83759 /* TrafficLightsTests */,
 				229942A5191FB37700D83759 /* Frameworks */,
 				229942A4191FB37700D83759 /* Products */,
+				FD4AAAC7CAFD413EAD918504 /* Pods-TrafficLightsTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +134,7 @@
 				229942A8191FB37700D83759 /* CoreGraphics.framework */,
 				229942AA191FB37700D83759 /* UIKit.framework */,
 				229942C5191FB37700D83759 /* XCTest.framework */,
+				B1FEA89FF53F439E8E905316 /* libPods-TrafficLightsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,9 +144,11 @@
 			children = (
 				229942B5191FB37700D83759 /* AppDelegate.h */,
 				229942B6191FB37700D83759 /* AppDelegate.m */,
-				229942B8191FB37700D83759 /* Main.storyboard */,
-				229942BB191FB37700D83759 /* ViewController.h */,
-				229942BC191FB37700D83759 /* ViewController.m */,
+				229942DB191FB3E300D83759 /* LightEngine.h */,
+				229942DC191FB3E300D83759 /* LightEngine.m */,
+				229942DE191FB41A00D83759 /* ViewController.h */,
+				229942DF191FB41A00D83759 /* ViewController.m */,
+				229942E0191FB41A00D83759 /* ViewController.xib */,
 				229942BE191FB37700D83759 /* Images.xcassets */,
 				229942AD191FB37700D83759 /* Supporting Files */,
 			);
@@ -137,6 +169,9 @@
 		229942CB191FB37700D83759 /* TrafficLightsTests */ = {
 			isa = PBXGroup;
 			children = (
+				229942F8191FB67300D83759 /* UI tests */,
+				229942F5191FB5F400D83759 /* Base tests */,
+				229942F2191FB5DF00D83759 /* Model tests */,
 				229942D1191FB37700D83759 /* TrafficLightsTests.m */,
 				229942CC191FB37700D83759 /* Supporting Files */,
 			);
@@ -150,6 +185,44 @@
 				229942CE191FB37700D83759 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		229942E3191FB48300D83759 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				229942E4191FB48300D83759 /* lights.png */,
+				229942E5191FB48300D83759 /* lights@2x.png */,
+				229942E6191FB48300D83759 /* noEntry.png */,
+				229942E7191FB48300D83759 /* noEntry@2x.jpg */,
+				229942E8191FB48300D83759 /* stop.png */,
+				229942E9191FB48300D83759 /* stop@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		229942F2191FB5DF00D83759 /* Model tests */ = {
+			isa = PBXGroup;
+			children = (
+				229942F0191FB5B800D83759 /* ModelTests.m */,
+			);
+			name = "Model tests";
+			sourceTree = "<group>";
+		};
+		229942F5191FB5F400D83759 /* Base tests */ = {
+			isa = PBXGroup;
+			children = (
+				229942F3191FB5F000D83759 /* BaseKiwiTests.m */,
+			);
+			name = "Base tests";
+			sourceTree = "<group>";
+		};
+		229942F8191FB67300D83759 /* UI tests */ = {
+			isa = PBXGroup;
+			children = (
+				229942F9191FB68600D83759 /* LightsTests.m */,
+				229942F6191FB62600D83759 /* UITests.m */,
+			);
+			name = "UI tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 229942D8191FB37700D83759 /* Build configuration list for PBXNativeTarget "TrafficLightsTests" */;
 			buildPhases = (
+				60F553E8368F419083EF6D2A /* Check Pods Manifest.lock */,
 				229942C0191FB37700D83759 /* Sources */,
 				229942C1191FB37700D83759 /* Frameworks */,
 				229942C2191FB37700D83759 /* Resources */,
+				B4D25512885440428EAD62E2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,9 +303,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229942ED191FB48300D83759 /* noEntry@2x.jpg in Resources */,
+				229942EE191FB48300D83759 /* stop.png in Resources */,
+				229942EF191FB48300D83759 /* stop@2x.png in Resources */,
+				229942EA191FB48300D83759 /* lights.png in Resources */,
+				229942EB191FB48300D83759 /* lights@2x.png in Resources */,
 				229942BF191FB37700D83759 /* Images.xcassets in Resources */,
+				229942EC191FB48300D83759 /* noEntry.png in Resources */,
+				229942E2191FB41A00D83759 /* ViewController.xib in Resources */,
 				229942B1191FB37700D83759 /* InfoPlist.strings in Resources */,
-				229942BA191FB37700D83759 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,13 +325,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60F553E8368F419083EF6D2A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D25512885440428EAD62E2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TrafficLightsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2299429F191FB37700D83759 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229942BD191FB37700D83759 /* ViewController.m in Sources */,
 				229942B7191FB37700D83759 /* AppDelegate.m in Sources */,
+				229942DD191FB3E300D83759 /* LightEngine.m in Sources */,
+				229942E1191FB41A00D83759 /* ViewController.m in Sources */,
 				229942B3191FB37700D83759 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229942F4191FB5F000D83759 /* BaseKiwiTests.m in Sources */,
+				229942F7191FB62600D83759 /* UITests.m in Sources */,
 				229942D2191FB37700D83759 /* TrafficLightsTests.m in Sources */,
+				229942F1191FB5B800D83759 /* ModelTests.m in Sources */,
+				229942FA191FB68600D83759 /* LightsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +399,6 @@
 				229942B0191FB37700D83759 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		229942B8191FB37700D83759 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				229942B9191FB37700D83759 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		229942CE191FB37700D83759 /* InfoPlist.strings */ = {
@@ -399,6 +510,7 @@
 		};
 		229942D9191FB37700D83759 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4AAAC7CAFD413EAD918504 /* Pods-TrafficLightsTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrafficLights.app/TrafficLights";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -421,6 +533,7 @@
 		};
 		229942DA191FB37700D83759 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4AAAC7CAFD413EAD918504 /* Pods-TrafficLightsTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrafficLights.app/TrafficLights";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -456,6 +569,7 @@
 				229942D7191FB37700D83759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		229942D8191FB37700D83759 /* Build configuration list for PBXNativeTarget "TrafficLightsTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +578,7 @@
 				229942DA191FB37700D83759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
